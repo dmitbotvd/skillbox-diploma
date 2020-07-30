@@ -1,0 +1,102 @@
+/*header*/
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  /*width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;*/
+}
+.header__nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header__nav ul li {
+  list-style-type: none;
+  padding-right: 20px;
+}
+.header__nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__tel {
+  padding-right: 20px;
+}
+.header__tel a {
+  text-decoration: none;
+  color: #000;
+}
+.callback-button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  border-radius: 50px;
+  width: 120px;
+}
+.callback-button a {
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #000;
+}
+
+/*bg*/
+.bg__block {
+  position: relative;
+}
+.bg__text h1 {
+  font-size: 40px;
+}
+.bg__text p {
+  
+}
+.bg__block span {
+  position: absolute;
+}
+.bg__span-1 {
+  left: 0;
+  top: 0;
+}
+.bg__span-2 {
+  left: 100px;
+  top: 0;
+}
+.bg__span-3 {
+  left: 0;
+  top: 0;
+}
+.bg__span-4 {
+  left: 0;
+  top: 0;
+}
+.bg__span-5 {
+  animation: span-5 35s ease-in-out ;
+  animation-direction: alternate;
+  background: red;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+/*
+@keyframes span-5 {
+  0% {
+    transform: translate(0, 50px);
+  }
+  100% {
+    transform: translate(350px, 150px);
+  }
+}*/
