@@ -150,8 +150,8 @@
 
 .bg__span-1 {
   position: absolute;
-  -webkit-transform: translate(-200px) rotate(-20deg);
-          transform: translate(-200px) rotate(-20deg);
+  -webkit-transform: translate(-100px) rotate(-20deg);
+          transform: translate(-100px) rotate(-20deg);
 }
 
 .bg__span-2 {
@@ -190,8 +190,8 @@
 
 .bg__span-5 {
   position: absolute;
-  -webkit-transform: translate(900px) rotate(190deg);
-          transform: translate(900px) rotate(190deg);
+  -webkit-transform: translate(400px) rotate(190deg);
+          transform: translate(400px) rotate(190deg);
 }
 
 .work__skills {
