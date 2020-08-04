@@ -1,9 +1,22 @@
-$color: red
-$grey: #ccc
-
-*
+$colr-black: #000
+$colr-grey: #ccc
+@mixin flex()
+  display: flex
+  align-items: center
+@mixin justbetween()
+  justify-content: space-between
+@mixin justcenter()
+  justify-content: center
+@mixin clearMP()
   margin: 0
   padding: 0
+@mixin textdecor()
+  text-decoration: none
+@mixin text-center()
+  text-align: center
+    
+*
+  @include clearMP()
   box-sizing: border-box
 
 .container 
@@ -11,22 +24,83 @@ $grey: #ccc
   width: 100%
   margin: 0 auto
 
+//callback
+.site-button
+  text-transform: uppercase
+  padding: 10px 20px
+  border-radius: 25px
+  background: $colr-black
+  max-width: 250px
+  @include flex()
+  @include justcenter()
+  a
+    color: $colr-grey
+    @include textdecor()
+
+.center-text
+  @include text-center()
+
+
+
 .header
-  &__block
-    display: flex
-    justify-content: space-between
-    align-items: center
+  height: 80px
+  &__flex
+    @include flex()
+    @include justbetween()
   &__left
-    display: flex
+    @include flex()
   &__right
-    display: flex
+    @include flex()
   &__nav
     ul
-      margin: 0
-      padding: 0
+      @include flex()
+      @include clearMP()
       li
         list-style-type: none
+        margin-right: 20px
         a
-          color: $color
-          text-decoration: none
+          color: $colr-black
+          @include textdecor()
+  &__right
+    @include flex()
+    @include justbetween()
+    a
+      @include textdecor()
+      color: $colr-black
+  &__tel
+    margin-right: 20px
+  &__button
+    a
+      background: $colr-black
+      color: $colr-grey
+      padding: 10px 20px
+      border-radius: 25px
     
+.bg
+  &__block
+  &__span-1
+    position: absolute
+    transform: translate(-200px) rotate(-20deg)
+  &__span-2
+    position: absolute
+    transform: translate(200px) rotate(40deg)
+  &__text
+    h1
+      font-size: 40px
+  &__span-3
+    position: absolute
+    transform: translate(500px) rotate(70deg)
+  &__button
+    a
+      text-decoration: none
+      color: $colr-black
+      padding: 10px 20px
+      border-radius: 25px
+      border: 1px solid $colr-black
+  &__span-4
+    position: absolute
+    transform: translate(650px) rotate(-120deg)
+  &__span-5
+    position: absolute
+    transform: translate(900px) rotate(190deg)
+.work
