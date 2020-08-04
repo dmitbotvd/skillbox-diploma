@@ -39,6 +39,9 @@ $colr-white: #fff
     color: $colr-grey
     @include textdecor()
 
+.center-button
+  margin: 0 auto
+
 .center-text
   @include text-center()
 
@@ -46,6 +49,8 @@ $colr-white: #fff
 
 .header
   height: 80px
+  @include flex()
+  @include justbetween()
   &__flex
     @include flex()
     @include justbetween()
@@ -65,7 +70,7 @@ $colr-white: #fff
           @include textdecor()
   &__right
     @include flex()
-    @include justbetween()
+    
     a
       @include textdecor()
       color: $colr-black
