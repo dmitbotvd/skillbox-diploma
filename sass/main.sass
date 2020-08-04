@@ -97,10 +97,39 @@ $colr-grey: #ccc
       padding: 10px 20px
       border-radius: 25px
       border: 1px solid $colr-black
+      display: inline-block
   &__span-4
     position: absolute
     transform: translate(650px) rotate(-120deg)
   &__span-5
     position: absolute
     transform: translate(900px) rotate(190deg)
+
+  
 .work
+  &__skills
+    @include flex()
+    @include justbetween()
+  &__item
+    @include flex()
+    flex-direction: column
+    border: 1px solid $colr-black
+    border-radius: 25px
+    margin: 0 10px
+  &__icon
+    img
+      max-width: 100px
+      margin-top: 15px
+  &__text
+    padding: 15px
+
+.examples
+  &__slider
+  &__item
+    margin: 0 20px
+    a 
+
+    img
+      max-width: 200px
+      margin: 0 auto
+      
