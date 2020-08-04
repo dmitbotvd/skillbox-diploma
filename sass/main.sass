@@ -1,5 +1,7 @@
 $colr-black: #000
 $colr-grey: #ccc
+$colr-white: #fff
+
 @mixin flex()
   display: flex
   align-items: center
@@ -133,3 +135,37 @@ $colr-grey: #ccc
       max-width: 200px
       margin: 0 auto
       
+.shadow
+  background: rgb(2,0,36);
+  background: linear-gradient(12deg, rgba(2,0,36,1) 0%, rgba(25,219,159,1) 43%, rgba(0,212,255,1) 100%);
+  &__center
+  &__text
+    h3
+      font-size: 24px
+  &__sub
+
+.footer
+  &__block
+    @include flex()
+    @include justbetween()
+  &__nav
+    ul
+      li
+        list-style-type: none
+        a
+          @include textdecor()
+          color: $colr-black
+  &__connection 
+  &__tel
+    a
+      @include textdecor()
+      color: $colr-black
+  &__email
+    a
+      @include textdecor()
+      color: $colr-black
+
+.copypaste
+  background-color: $colr-black
+  p
+    color: $colr-white
